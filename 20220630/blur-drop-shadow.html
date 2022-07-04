@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模糊和阴影效果</title>
+</head>
+<body>
+    <svg width="110" height="110">
+        <defs>
+            <filter x="0" y="o" id="f1">
+                <feGaussianBlur stdDeviation="15" />
+            </filter>
+        </defs>
+        <rect width="90" height="90" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)"/>
+    </svg>
+    <br>
+
+    <svg ></svg>
+</body>
+</html>
