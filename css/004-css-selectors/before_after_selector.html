@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before_after_selector</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            color: aliceblue;
+        }
+        div::before {
+            content: "我是向前添加";
+            font-size: 30px;
+        }
+        div::after {
+            content: "我是向后添加";
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        我是向前添加我是一个div方素，用来实现素内部向前向后插入内容。我是向后添加
+    </div>
+</body>
+</html>

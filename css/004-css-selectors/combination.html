@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS组合选择器</title>
+    <style>
+        div h1 {
+            text-align: center;
+        }
+        div h3 {
+            color: blue;
+        }
+        /* 如果仅仅定义“div p”,会将所有文本内容都定义成蓝色 */
+        div li p {
+            color: rgb(0, 34, 255);
+        }
+        /* 只会定义第一段p元素里的内容，因为只有第一段p是div的第一子元素 */
+        div>p {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- 这里使用div,是为了更准确的描述所需要定义的标签组 -->
+    <div>
+        <h1>浠浠呀老师，应届前端工程师找工作，有啥建议吗？</h1>
+        <p>应届生干万别说“虽然我没有经验，但是我愿意去学”，我之前在面试很多应届生的时候，经常听到这句话，其实一听到这句话，基本上面试就结束了！现在是互联网时代你还对行业信息一无所知？</p>
+        <h3>你可以这样：</h3>
+        <ol>
+            <li>
+                <p>先在网上搜索即将要面试的公司官网，看看这个公司所在行业的地位、主要研发的产品都是什么，以及其他竞品公司相关的情况。</p>
+            </li>
+            <li>
+                <p>然后再去搜索该行业相关文章、论坛和资讯，提前查看和储备这个行业的基础知识。</p>
+            </li>
+            <li>
+                <p>最后用思维导图整理出自己最满意的学习案例，用事实证明自己的学习能力。</p>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
+
+
+

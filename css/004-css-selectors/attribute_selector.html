@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS属性选择器</title>
+    <style>
+        /* 查找页面元素所有携带type属性的元素，并添加样式申明。在浏览器中即可看到输入框、密码框、单选框宽度与高度的调整 */
+        [type] {
+            width: 30px;
+            height: 30px;
+        }
+        /* 如果只想修饰单选框中的性别 */
+        [name=sex] {
+            width: 20px;
+            height: 20px;
+        }
+        /* 修饰带有class和box属性的内容 */
+        [class~="box"] {
+            background-color: aquamarine;
+        }
+        /* 再次查找页面中带有lass属性，并将取值为box或者是box杠开头的元素 */
+        [class|="box"] {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>基础信息</h1>
+    用户名：<input type="text" class="box"><br>
+    密码框：<input type="password"><br>
+    回答问题：<input type="text"><br>
+    性别选择：<input type="radio"name="sex">男<input type="radio"name="sex">女
+    <br>
+    是否核酸：<input type="radio"name="yesorno">是<input type="radio"
+    name="yesorno">否<br>
+    <h1>元素修饰</h1>
+    <p class="box big bobo">我是一个p元素我有三个类名，分别是：box,big,bobo</p>
+    <p class="box bobo">我是一个p元素我有两个类名，分别是：box和bobo</p>
+    <div class="box">我是一个div元素，我有一个类名叫做：box</div>
+    <div class="box-qf">我是一个div元素，我有-个类名叫做：box-qf</div>
+</body>
+</html>

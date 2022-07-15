@@ -1,0 +1,23 @@
+/* 给整体文本添加黑色字体样式 */
+body {
+    color: black;
+}
+/* 给文字区域设置宽度 */
+div {
+    width: 344px;
+}
+/* 给标题添加背景色、字体颜色样式 */
+div h1 {
+    width: 344px;
+    height: 50px;
+    background-color: #00bfff;
+    color: #ff0000;
+}
+/* 给文字区域设置背景色 */
+div p {
+    background-color: #ffff00;
+}
+/* 给第一段文字内容设置文字颜色 */
+#para1 {
+    color:#5aae00;
+}
